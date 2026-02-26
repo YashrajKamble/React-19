@@ -1,0 +1,27 @@
+/* Layout: show sidebar and main content horizontally */
+.app-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* Optional: give sidebar a fixed width */
+.app-layout nav {
+  min-width: 180px;
+}
+
+/* Keep your existing indicator styles */
+.indicator {
+  display: inline-block;
+  margin-left: 4px;
+  transition: transform 0.2s;
+  font-size: 0.8rem;
+}
+
+.indicator.right {
+  transform: rotate(90deg);
+}
+
+.indicator.down {
+  transform: rotate(180deg);
+}
